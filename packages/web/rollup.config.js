@@ -10,6 +10,7 @@ import { terser } from 'rollup-plugin-terser'
 const { clone } = require('@ctx-core/object')
 const { reject } = require('@ctx-core/array')
 const { style } = require('@ctx-core/sass/svelte')
+const { markup } = require('@ctx-core/markdown/svelte')
 import config from 'sapper/config/rollup'
 import pkg from './package.json'
 const mode = process.env.NODE_ENV
@@ -19,6 +20,7 @@ const __replace = {
 	'process.env.NODE_ENV': JSON.stringify(mode),
 	'process.env.ROOT__PATH': JSON.stringify('/'),
 }
+const extensions__svelte = ['.svelte', '.html', '.md']
 export default {
 	client: {
 		input: config.client.input(),
@@ -29,10 +31,12 @@ export default {
 			}),
 			svelte({
 				dev,
+				extensions: extensions__svelte,
 				hydratable: true,
 				emitCss: true,
 				preprocess: {
 					style,
+					markup,
 				},
 			}),
 			globals__plugin(),
@@ -70,8 +74,10 @@ export default {
 			svelte({
 				generate: 'ssr',
 				dev,
+				extensions: extensions__svelte,
 				preprocess: {
 					style,
+					markup,
 				},
 			}),
 			resolve(),

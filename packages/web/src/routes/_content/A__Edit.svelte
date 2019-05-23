@@ -5,6 +5,6 @@
 </script>
 
 <a
-	href="{$__url__edit__source}/packages/web/{join('', href)}"
+	href="{join($__url__edit__source, href)}"
 	target="_blank"
 ><slot>edit</slot></a>

@@ -1,10 +1,12 @@
 <script context="module">
-	export async function preload({ query, params }) {
-		const { a1__segment } = params
-		const path = a1__segment.join('/')
-		const response = await this.fetch(`/${path}/json`)
+	import { clone } from '@ctx-core/object'
+	import { join } from 'path'
+	export async function preload({ path, query, params }) {
+		const response = await this.fetch(`${path}/md.json`)
+		const dir = join('src/routes', path)
 		if (response.ok) {
-			return response.json()
+			const md = await response.json()
+			return clone(md, { path, dir })
 		} else {
 			return this.error(response.statusCode, await response.text())
 		}
@@ -12,26 +14,19 @@
 </script>
 
 <script>
-	import { __session__sapper } from '@ctx-core/sapper/store'
 	import A__Edit from '../_content/A__Edit.svelte'
-	export let path__content
-	export let path__segment
+	export let path
+	export let dir
 	export let a1__name = null
-	export let ctx__parse__md = null
 </script>
 
 {#if a1__name}
 	<table>
 		{#each a1__name as name}
 			<tr>
-				<td><a href="/{path__segment}/{name}">{name}</a></td>
-				<td><A__Edit href="{path__content}/{name}.md"></A__Edit></td>
+				<td><a href="{join('/', path, name)}">{name}</a></td>
+				<td><A__Edit href="{join('/', dir, name)}.md"></A__Edit></td>
 			</tr>
 		{/each}
 	</table>
-{/if}
-
-{#if ctx__parse__md}
-	{@html ctx__parse__md.html}
-	<A__Edit href="{path__content}.md"></A__Edit>
 {/if}

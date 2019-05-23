@@ -2,24 +2,15 @@
 	import { __path__sapper } from '@ctx-core/sapper/store'
 	import { __path__home } from '../_store'
 	import {
-		__a1__name__root__content,
-		__a1__path__root__content,
-	} from '../_content/store'
-	import {
 		__theme__invert,
 		invert__theme,
 	} from '@ctx-core/theme/store'
-	import { _idx } from '@ctx-core/array'
 	import Handle__Nav from '@ctx-core/nav/Handle__Nav.svelte'
 	import Content__Nav from '@ctx-core/nav/Content__Nav.svelte'
 	import Item__Nav from '@ctx-core/nav/Item__Nav.svelte'
 	import FA_project_diagram_solid from '@ctx-core/font-awesome/ui/FA-project-diagram-solid.html'
 	import FA_sun_solid from '@ctx-core/font-awesome/ui/FA-sun-solid.html'
 	import FA_moon_regular from '@ctx-core/font-awesome/ui/FA-moon-regular.html'
-	let idx__selected
-	$: idx__selected =
-		_idx($__a1__path__root__content,
-			path__root__content => $__path__sapper.startsWith(path__root__content))
 </script>
 
 <Handle__Nav class="Handle__Nav__Holochain"></Handle__Nav>
@@ -28,13 +19,16 @@
 		<Item__Nav href="/" class="container__logo">
 			<FA_project_diagram_solid></FA_project_diagram_solid>
 		</Item__Nav>
-		{#each $__a1__name__root__content as name__root__content,idx}
-			<Item__Nav
-				href="{$__a1__path__root__content[idx]}"
-				selected="{idx__selected === idx}"
-				class="child_nav"
-			>{name__root__content}</Item__Nav>
-		{/each}
+		<Item__Nav
+			href="/dev"
+			selected="{$__path__sapper.startsWith('/dev')}"
+			class="child_nav"
+		>dev</Item__Nav>
+		<Item__Nav
+			href="/about"
+			selected="{$__path__sapper.startsWith('/about')}"
+			class="child_nav"
+		>about</Item__Nav>
 		<div class="theme">
 			<a
 				href="."
