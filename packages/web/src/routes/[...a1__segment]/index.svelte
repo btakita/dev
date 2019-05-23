@@ -17,7 +17,7 @@
 	export let path__content
 	export let path__segment
 	export let a1__name = null
-	export let content__md = null
+	export let ctx__parse__md = null
 </script>
 
 {#if a1__name}
@@ -31,7 +31,7 @@
 	</table>
 {/if}
 
-{#if content__md}
-	{@html content__md.html}
+{#if ctx__parse__md}
+	{@html ctx__parse__md.html}
 	<A__Edit href="{path__content}.md"></A__Edit>
 {/if}
