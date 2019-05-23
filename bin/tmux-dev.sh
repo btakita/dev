@@ -38,4 +38,13 @@ tmux send-keys 'yarn run dev' 'C-m'
 tmux select-pane -t 2
 tmux send-keys 'tig' 'C-m'
 
+cd $DEV_DIR/packages/web
+
+tmux new-window
+tmux rename-window web
+tmux split-window -v
+tmux send-keys 'yarn run dev' 'C-m'
+tmux select-layout even-vertical
+tmux select-pane -t 0
+
 tmux select-window -t 0
