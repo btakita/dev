@@ -21,6 +21,7 @@
 	import Footer from './_layout/Footer.svelte'
 	export let version
 	const { page, preloading, session } = stores()
+	__theme__invert.set(true)
 	__VERSION.set(version)
 	$: __page__sapper.set($page)
 	$: __preloading__sapper.set($preloading)

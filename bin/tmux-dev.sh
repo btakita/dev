@@ -4,7 +4,7 @@ DEV_DIR="${DEV_DIR:-$DEV_DIR_DEFAULT}"
 
 cd $DEV_DIR
 
-tmux rename-window business
+tmux rename-window dev
 tmux split-window -v
 tmux send-keys 'tig' 'C-m'
 tmux select-pane -t 0

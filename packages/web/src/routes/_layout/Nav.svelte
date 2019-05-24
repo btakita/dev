@@ -39,17 +39,17 @@
 	</Content__Nav>
 </div>
 
-<style type="text/scss">
+<style type="text/scss" global>
 	@import 'src/css/variables';
 	@import '~@ctx-core/nav/lib';
 	@include Handle__Nav($width__wide: $width__max__tablet);
 	@include Content__Nav($width__wide: $width__max__tablet);
 	@include Content__Nav__selected__underline($background: $color__a);
-	:global(._layout.invert) {
-		:global(.Content__Nav) {
-			:global(.dialog) {
-				:global(.container) {
-					:global(.Item__Nav) {
+	._layout.invert {
+		.Content__Nav {
+			.dialog {
+				.container {
+					.Item__Nav {
 						&.selected {
 							&::after {
 								background: $color__a__invert;
@@ -60,17 +60,17 @@
 			}
 		}
 	}
-	@media(max-width: #{$width__max__tablet}) {
+	@media(max-width: #{$width__max__tablet} {
 		@include Content__Nav__selected__background(
-			$background: mix($color__layout, $color__header, 10%)
+			$background: mix($color__layout, $color__background__header, 10%)
 		);
-		:global(._layout.invert) {
-			:global(.Content__Nav) {
-				:global(.dialog) {
-					:global(.container) {
-						:global(.Item__Nav) {
+		._layout.invert {
+			.Content__Nav {
+				.dialog {
+					.container {
+						.Item__Nav {
 							&.selected {
-								background: invert(mix($color__layout, $color__header, 10%));
+								background: invert(mix($color__layout, $color__background__header, 10%));
 							}
 						}
 					}
@@ -80,54 +80,54 @@
 		@include Content__Nav__cancel__selected__underline();
 	}
 	@include Content__Nav__slide_from_right($width__wide: $width__max__tablet);
-	:global(.Handle__Nav) {
+	.Handle__Nav {
 		fill: $color__layout;
-		@media(max-width: #{$width__max__tablet}) {
+		@media(max-width: #{$width__max__tablet} {
 			position: absolute;
 			top: 0.6rem;
 			right: 0.4rem;
 		}
 	}
-	:global(._layout.invert) {
-		:global(.Content__Nav) {
-			@media(max-width: #{$width__max__tablet}) {
-				background-color: invert(mix($color__layout, $color__header, 50%));
+	._layout.invert {
+		.Content__Nav {
+			@media(max-width: #{$width__max__tablet} {
+				background-color: invert(mix($color__layout, $color__background__header, 50%));
 			}
 		}
 	}
-	:global(.Content__Nav) {
+	.Content__Nav {
 		height: auto;
 		z-index: 1;
-		@media(max-width: #{$width__max__tablet}) {
+		@media(max-width: #{$width__max__tablet} {
 			width: 10rem;
 			position: fixed;
 			top: 0;
 			height: 100vh;
-			background-color: mix($color__layout, $color__header, 50%);
+			background-color: mix($color__layout, $color__background__header, 50%);
 		}
-		:global(.dialog) {
-			:global(.container) {
+		.dialog {
+			.container {
 				position: relative;
 				display: flex;
 				&.path__home {
-					:global(.child_nav) {
+					.child_nav {
 						display: none;
-						@media(max-width: #{$width__max__tablet}) {
+						@media(max-width: #{$width__max__tablet} {
 							display: block;
 						}
 					}
 				}
-				:global(.Item__Nav) {
+				.Item__Nav {
 					flex: 0;
 					&.container__logo {
 						margin-right: 1.5rem;
 					}
-					:global(svg) {
+					svg {
 						height: 40px;
 						width: 40px;
 						fill: $color__layout;
 					}
-					:global(a) {
+					a {
 						margin-right: 0.8rem;
 						color: $color__layout;
 						fill: $color__layout;
@@ -136,10 +136,10 @@
 						}
 					}
 				}
-				:global(.theme) {
+				.theme {
 					position: absolute;
 					right: 1rem;
-					:global(svg) {
+					svg {
 						height: 1.2rem;
 						width: 1.2rem;
 						fill: $color__layout;
@@ -148,17 +148,23 @@
 			}
 		}
 	}
-	:global(._layout.invert) {
-		:global(.Content__Nav) {
-			:global(.dialog) {
-				:global(.container) {
-					:global(.Item__Nav) {
-						:global(svg) {
+	._layout.invert {
+		.Content__Nav {
+			.dialog {
+				.container {
+					.Item__Nav {
+						a {
+							color: $color__header__invert;
+							&.selected {
+								box-shadow: 0 2px 0 $color__a__mid__invert;
+							}
+						}
+						svg {
 							fill: $color__layout__invert;
 						}
 					}
-					:global(.theme) {
-						:global(svg) {
+					.theme {
+						svg {
 							fill: $color__layout__invert;
 						}
 					}
@@ -166,12 +172,12 @@
 			}
 		}
 	}
-	:global(._layout.invert) {
-		:global(.Content__Nav.content-wrap) {
-			:global(.dialog) {
-				:global(.container) {
-					:global(.Item__Nav) {
-						:global(a) {
+	._layout.invert {
+		.Content__Nav.content-wrap {
+			.dialog {
+				.container {
+					.Item__Nav {
+						a {
 							fill: $color__layout__invert;
 						}
 					}
