@@ -5,7 +5,7 @@
 		const response = await this.fetch(`${path}/md.json`)
 		if (response.ok) {
 			const md = await response.json()
-			return clone(md, { path, })
+			return clone(md, { path })
 		} else {
 			return this.error(response.statusCode, await response.text())
 		}

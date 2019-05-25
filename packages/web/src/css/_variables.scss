@@ -8,12 +8,13 @@
 @import "~bootstrap/scss/mixins/transition";
 @import "src/css/variables__bootstrap";
 
-$height__header: 110px;
+$height__header: 3rem;
 $height__header__tablet: '#{$height__header / 2} + 0.5rem';
 $width__widescreen: 1400px;
 $width__centering: 1200px;
 $width__max__tablet: 768px;
 $width__max__phone: 480px;
+$width__wide: $width__max__tablet;
 
 $color__layout: $gray-100;
 $color__layout__invert: $gray-900;
@@ -21,8 +22,8 @@ $color__text: $gray-900;
 $color__text__invert: $gray-100;
 $color__background__code: mix($color__text__invert, $color__layout, 10%);
 $color__background__code__invert: mix($color__text, $color__layout, 10%);
-$color__a__mid: mix($color__text__invert, $color__layout__invert, 50%);
-$color__a__mid__invert: mix($color__text, $color__layout, 50%);
+$color__a__mid: mix($color__text, $color__layout, 50%);
+$color__a__mid__invert: mix($color__text__invert, $color__layout__invert, 50%);
 $color__header: $gray-900;
 $color__header__invert: $gray-100;
 $color__background__header: $gray-600;

@@ -36,7 +36,7 @@
 <div
 	{version}
 	class="_layout {$__class__layout||''}"
-	class:invert="{$__theme__invert}"
+	class:theme__invert="{$__theme__invert}"
 >
 	<Header></Header>
 
@@ -72,12 +72,9 @@
 		background-color: $color__layout;
 		color: $color__text;
 		min-height: 100vh;
-		&.invert {
+		&.theme__invert {
 			background-color: $color__layout__invert;
 			color: $color__text__invert;
-			a {
-				color: $color__a__invert;
-			}
 		}
 		main {
 			position: relative;
@@ -86,7 +83,7 @@
 			overflow: hidden;
 			min-height: 600px;
 			padding: 1rem 0;
-			margin: 0 auto;
+			margin: $height__header auto 0;
 			box-sizing: border-box;
 			z-index: 0;
 		}
@@ -94,6 +91,11 @@
 	a {
 		text-decoration: none;
 		color: $color__a;
+	}
+	._layout.theme__invert {
+		a {
+			color: $color__a__invert;
+		}
 	}
 	.content-wrap {
 		width: $width__centering;
@@ -181,7 +183,7 @@
 			}
 		}
 	}
-	._layout.invert {
+	._layout.theme__invert {
 		code {
 			background: $color__background__code__invert;
 			color: $color__text__invert;
