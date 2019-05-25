@@ -44,7 +44,7 @@
 	@import '~@ctx-core/nav/lib';
 	@include Handle__Nav($width__wide: $width__max__tablet);
 	@include Content__Nav($width__wide: $width__max__tablet);
-	@include Content__Nav__selected__underline($background: $color__a);
+	@include Item__Nav__selected-underline($background: $color__a);
 	._layout.invert {
 		.Content__Nav {
 			.dialog {
@@ -61,7 +61,7 @@
 		}
 	}
 	@media(max-width: #{$width__max__tablet} {
-		@include Content__Nav__selected__background(
+		@include Item__Nav__selected-background(
 			$background: mix($color__layout, $color__background__header, 10%)
 		);
 		._layout.invert {
@@ -77,9 +77,9 @@
 				}
 			}
 		}
-		@include Content__Nav__cancel__selected__underline();
+		@include Item__Nav__cancel-selected-underline();
 	}
-	@include Content__Nav__slide_from_right($width__wide: $width__max__tablet);
+	@include Content__Nav__slide-from-right($width__wide: $width__max__tablet);
 	.Handle__Nav {
 		fill: $color__layout;
 		@media(max-width: #{$width__max__tablet} {
