@@ -9,8 +9,10 @@ import babel from 'rollup-plugin-babel'
 import { terser } from 'rollup-plugin-terser'
 const { clone } = require('@ctx-core/object')
 const { reject } = require('@ctx-core/array')
-const { style } = require('@ctx-core/sass/svelte')
+const { _preprocess } = require('@ctx-core/svelte/preprocess')
+const { _preprocess__sass } = require('@ctx-core/sass/svelte')
 import { mdsvex } from 'mdsvex'
+const { _preprocess__svg } = require('@ctx-core/svg/svelte')
 import config from 'sapper/config/rollup'
 import pkg from './package.json'
 const mode = process.env.NODE_ENV
@@ -20,10 +22,17 @@ const __replace = {
 	'process.env.NODE_ENV': JSON.stringify(mode),
 	'process.env.ROOT__PATH': JSON.stringify('/'),
 }
-const extensions__svelte = ['.svelte', '.html', '.md']
-const { markup } = mdsvex({
+const extensions__svelte = ['.svelte', '.html', '.md', '.svg']
+const preprocess__sass = _preprocess__sass()
+const preprocess__mdsvex = mdsvex({
 	extension: '.md',
 })
+const preprocess__svg = _preprocess__svg()
+const preprocess = _preprocess([
+	preprocess__sass,
+	preprocess__mdsvex,
+	preprocess__svg,
+])
 export default {
 	client: {
 		input: config.client.input(),
@@ -37,10 +46,7 @@ export default {
 				extensions: extensions__svelte,
 				hydratable: true,
 				emitCss: true,
-				preprocess: {
-					style,
-					markup,
-				},
+				preprocess,
 			}),
 			globals__plugin(),
 			builtins__plugin(),
@@ -78,10 +84,7 @@ export default {
 				generate: 'ssr',
 				dev,
 				extensions: extensions__svelte,
-				preprocess: {
-					style,
-					markup,
-				},
+				preprocess,
 			}),
 			resolve(),
 			commonjs()
