@@ -6002,10 +6002,10 @@ node-sass@^4.12.0:
     stdout-stream "^1.4.0"
     "true-case-path" "^1.0.2"
 
-nodemon@^1.19.0:
-  version "1.19.0"
-  resolved "https://registry.yarnpkg.com/nodemon/-/nodemon-1.19.0.tgz#358e005549a1e9e1148cb2b9b8b28957dc4e4527"
-  integrity sha512-NHKpb/Je0Urmwi3QPDHlYuFY9m1vaVfTsRZG5X73rY46xPj0JpNe8WhUGQdkDXQDOxrBNIU3JrcflE9Y44EcuA==
+nodemon@^1.19.1:
+  version "1.19.1"
+  resolved "https://registry.yarnpkg.com/nodemon/-/nodemon-1.19.1.tgz#576f0aad0f863aabf8c48517f6192ff987cd5071"
+  integrity sha512-/DXLzd/GhiaDXXbGId5BzxP1GlsqtMGM9zTmkWrgXtSqjKmGSbLicM/oAy4FR0YWm14jCHRwnR31AHS2dYFHrg==
   dependencies:
     chokidar "^2.1.5"
     debug "^3.1.0"
@@ -8195,6 +8195,11 @@ svelte@^3.4.2:
   version "3.4.2"
   resolved "https://registry.yarnpkg.com/svelte/-/svelte-3.4.2.tgz#55e34d7a53f9a732387dbf0fcb68e2fa4b598c93"
   integrity sha512-sh7UCIBAgRrNxDx3afw+sKipY2ilpNNsBHXQXtwU481ZWGidAOowcZw1JrfB86hpLJvGqxkzBJqCQoGGtA35qA==
+
+svelte@^3.4.4:
+  version "3.4.4"
+  resolved "https://registry.yarnpkg.com/svelte/-/svelte-3.4.4.tgz#8dcb60796b2b5a47175371f0763a612bf33a0944"
+  integrity sha512-O9tzroEWVPOQe1QITW1jP8LAJwXmCfDDGdkOCa9Y6NlJ+gQwn+/rhFbMQ+vu2PWPLZt1gxN8DjTFM4nOBuMLFg==
 
 swap-case@^1.1.0:
   version "1.1.2"
