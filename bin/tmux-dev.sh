@@ -20,10 +20,8 @@ tmux select-pane -t 0
 cd $DEV_DIR
 
 tmux new-window
-tmux rename-window util
-tmux split-window -v
-tmux split-window -v
-tmux select-layout even-vertical
+tmux rename-window build-typescript
+tmux send-keys 'watch-ts-toposort.sh' 'C-m'
 tmux select-pane -t 0
 
 cd $DEV_DIR/packages/sapper-template
