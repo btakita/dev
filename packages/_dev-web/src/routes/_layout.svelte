@@ -15,10 +15,11 @@
 	import { __VERSION } from '@ctx-core/env/store'
 	import { _no__dom } from '@ctx-core/dom'
 	import { _html__webfont__fout } from '@ctx-core/google/html'
-	import { __class__layout, __prepend__footer } from './_layout/store'
+	import { __class__layout, __prepend__footer } from '@btakita/layout/store'
 	import { __theme__invert } from '@ctx-core/theme/store'
-	import Header from './_layout/Header.svelte'
-	import Footer from './_layout/Footer.svelte'
+	import Header from '@btakita/layout/Header.svelte'
+	import Footer from '@btakita/layout/Footer.svelte'
+	export let segment
 	export let version
 	const { page, preloading, session } = stores()
 	__theme__invert.set(true)
@@ -50,7 +51,7 @@
 </div>
 
 <style type="text/scss" global>
-	@import 'src/css/variables';
+	@import '~@myproject/css/variables';
 	* {
 		box-sizing: border-box;
 	}

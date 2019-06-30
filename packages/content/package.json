@@ -1,0 +1,20 @@
+{
+  "name": "@btakita/content",
+  "version": "0.0.1",
+  "private": true,
+	"scripts": {
+		"build": "npm run clean && npm run compile",
+		"clean": "rm -rf .rpt2_cache; find ./*/index.* -type f -not -name 'index.ts' -delete",
+		"compile": "rollup -c",
+		"prepublishOnly": "npm run build",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+  "dependencies": {
+    "svelte": "^3.6.2"
+  },
+  "devDependencies": {
+    "rollup": "^1.16.3",
+    "rollup-plugin-typescript2": "^0.21.2",
+    "typescript": "^3.5.2"
+  }
+}
