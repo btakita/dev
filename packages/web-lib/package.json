@@ -12,6 +12,7 @@
 	"dependencies": {
 		"@ctx-core/function": "^10.0.3",
 		"@ctx-core/sapper": "^6.1.7",
+		"@ctx-core/store": "^11.1.7",
 		"svelte": "^3.6.2"
 	},
 	"devDependencies": {

@@ -56,7 +56,6 @@
 		width: 100%;
 		&.path__home {
 			.child_nav {
-				display: none;
 				@media(max-width: #{$width__wide}) {
 					display: block;
 				}
