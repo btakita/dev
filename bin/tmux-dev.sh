@@ -29,7 +29,6 @@ cd $DEV_DIR/packages/dev-sapper-template
 tmux new-window
 tmux rename-window dev-sapper-template
 tmux split-window -v
-d
 tmux select-pane -t 1
 tmux send-keys 'tig' 'C-m'
 
