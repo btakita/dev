@@ -1,2 +1,2 @@
 #!/bin/sh
-termite -e tmux $@ & 2>/dev/null
+termite -e "tmux new $SHELL" $@ & 2>/dev/null

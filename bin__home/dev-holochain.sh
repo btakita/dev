@@ -1,2 +1,2 @@
 #!/bin/sh
-fork-termite-tmux.sh -t holochain -d ~/work/holochain/
+fork-termite-tmux.sh -t holochain -d ~/work/holochain/ $SHELL
