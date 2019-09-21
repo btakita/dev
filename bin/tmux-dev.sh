@@ -29,9 +29,7 @@ tmux select-pane -t 0
 cd $DIR/packages/dev-sapper-template
 tmux new-window $SHELL
 tmux rename-window dev-sapper-template
-tmux send-keys 'eval $SHELL' 'C-m'
 tmux split-window -v $SHELL
-tmux send-keys 'eval $SHELL' 'C-m'
 tmux select-pane -t 1
 tmux send-keys 'tig' 'C-m'
 tmux select-pane -t 0
@@ -39,13 +37,10 @@ tmux select-pane -t 0
 cd $DIR/packages/sapper-template
 tmux new-window $SHELL
 tmux rename-window sapper-template
-tmux send-keys 'eval $SHELL' 'C-m'
 tmux split-window -h $SHELL
-tmux send-keys 'eval $SHELL' 'C-m'
 tmux select-pane -t 0
 tmux send-keys 'yarn run dev' 'C-m'
 tmux split-window -v $SHELL
-tmux send-keys 'eval $SHELL' 'C-m'
 tmux send-keys 'tig' 'C-m'
 tmux select-pane -t 1
 
