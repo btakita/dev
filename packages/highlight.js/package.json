@@ -1,5 +1,5 @@
 {
-	"name": "@btakita/highlight.js",
+	"name": "@myproject/highlight.js",
 	"version": "0.0.1",
 	"private": true,
 	"main": "./lib.js",

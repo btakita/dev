@@ -1,5 +1,5 @@
 {
-	"name": "@btakita/layout",
+	"name": "@myproject/layout",
 	"version": "0.0.1",
 	"private": true,
 	"scripts": {
@@ -15,7 +15,7 @@
 		"@ctx-core/sapper": "^6.1.98",
 		"@ctx-core/sass": "^6.1.76",
 		"@ctx-core/theme": "^1.1.123",
-		"@btakita/web-lib": "^0.0.1",
+		"@myproject/web-lib": "^0.0.1",
 		"svelte": "^3.12.1"
 	},
 	"devDependencies": {

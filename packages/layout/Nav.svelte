@@ -1,6 +1,6 @@
 <script>
 	import { __path__sapper } from '@ctx-core/sapper/store'
-	import { __path__home } from '@btakita/web-lib/store'
+	import { __path__home } from '@myproject/web-lib/store'
 	import {
 		__theme__invert,
 		invert__theme,
@@ -44,7 +44,7 @@
 </div>
 
 <style type="text/scss" global>
-	@import '~@btakita/css/variables';
+	@import '~@myproject/css/variables';
 	@import '~@ctx-core/nav/lib';
 	$width--wide: $width--max--tablet;
 	@include Handle__Nav($width--wide: $width--wide);
