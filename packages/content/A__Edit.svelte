@@ -1,6 +1,6 @@
 <script>
 import { join } from 'path'
-import { __url__edit__source } from '@btakita/content/store'
+import { __url__edit__source } from '@myproject/content/store'
 export let href = ''
 </script>
 
