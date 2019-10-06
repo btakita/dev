@@ -37,7 +37,7 @@
 		"@ctx-core/google": "^5.0.76",
 		"@ctx-core/html": "^6.0.125",
 		"@ctx-core/markdown": "^7.0.119",
-		"@ctx-core/nav": "^13.0.97",
+		"@ctx-core/nav": "^13.0.98",
 		"@ctx-core/object": "^6.1.16",
 		"@ctx-core/sapper": "^6.1.98",
 		"@ctx-core/sass": "^6.1.76",
