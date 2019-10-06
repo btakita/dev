@@ -4,7 +4,7 @@
 	"private": true,
 	"main": "./lib.js",
 	"module": "./lib.js",
-	"dependencies": {
+	"devDependencies": {
 		"@ctx-core/sass": "^6.1.76"
 	}
 }
