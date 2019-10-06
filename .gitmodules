@@ -1,3 +1,0 @@
-[submodule "packages/dev-sapper-template"]
-	path = packages/dev-sapper-template
-	url = git@github.com:ctx-core/dev-sapper-template.git
