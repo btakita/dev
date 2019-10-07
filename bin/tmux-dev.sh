@@ -26,4 +26,22 @@ tmux split-window -v $SHELL
 tmux send-keys 'tig' 'C-m'
 tmux select-pane -t 0
 
+cd $DIR/packages/lerna-template
+tmux new-window $SHELL
+tmux rename-window lerna-template
+tmux split-window -v $SHELL
+tmux select-pane -t 1
+tmux send-keys 'tig' 'C-m'
+tmux select-pane -t 0
+
+cd $DIR/packages/sapper-template
+tmux new-window $SHELL
+tmux rename-window sapper-template
+tmux split-window -h $SHELL
+tmux select-pane -t 0
+tmux send-keys 'yarn run dev' 'C-m'
+tmux split-window -v $SHELL
+tmux send-keys 'tig' 'C-m'
+tmux select-pane -t 1
+
 tmux select-window -t 0
