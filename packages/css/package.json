@@ -1,10 +1,10 @@
 {
-	"name": "@myproject/css",
+	"name": "@btakita/css",
 	"version": "0.0.1",
 	"private": true,
 	"main": "./lib.js",
 	"module": "./lib.js",
 	"devDependencies": {
-		"@ctx-core/sass": "^6.1.76"
+		"@ctx-core/sass": "^6.1.78"
 	}
 }

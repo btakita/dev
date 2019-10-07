@@ -1,26 +1,24 @@
 {
-	"name": "@myproject/layout",
+	"name": "@btakita/layout",
 	"version": "0.0.1",
 	"private": true,
 	"scripts": {
 		"build": "npm run clean && npm run compile",
 		"clean": "rm -rf .rpt2_cache; find ./*/index.* -type f -not -name 'index.ts' -delete",
-		"compile": "rollup -c",
+		"compile": "tsc -b",
 		"prepublishOnly": "npm run build",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"dependencies": {
-		"@ctx-core/fontawesome": "^10.1.74",
-		"@ctx-core/nav": "^13.0.98",
-		"@ctx-core/sapper": "^6.1.98",
-		"@ctx-core/sass": "^6.1.76",
-		"@ctx-core/theme": "^1.1.123",
-		"@myproject/web-lib": "^0.0.1",
+		"@ctx-core/fontawesome": "^10.1.76",
+		"@ctx-core/nav": "^13.0.100",
+		"@ctx-core/sapper": "^6.2.1",
+		"@ctx-core/sass": "^6.1.78",
+		"@ctx-core/theme": "^1.1.125",
+		"@btakita/web-lib": "^0.0.1",
 		"svelte": "^3.12.1"
 	},
 	"devDependencies": {
-		"rollup": "^1.23.1",
-		"rollup-plugin-typescript2": "^0.24.3",
 		"typescript": "^3.6.3"
 	}
 }

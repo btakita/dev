@@ -1,12 +1,11 @@
 {
+	"extends": "../../tsconfig.json",
 	"compilerOptions": {
-		"baseUrl": ".",
-		"paths": {
-			"*": [
-				"types/*"
-			]
-		}
-	},
-	"exclude": [],
-	"extends": "../../tsconfig.json"
+		"outDir": ".",
+		"declarationDir": ".",
+		"lib": [
+			"es2019",
+			"dom"
+		]
+	}
 }

@@ -1,12 +1,14 @@
 {
+	"extends": "../../tsconfig.json",
 	"compilerOptions": {
-		"baseUrl": ".",
-		"paths": {
-			"*": [
-				"types/*"
-			]
-		}
+		"outDir": ".",
+		"declarationDir": ".",
+		"lib": [
+			"es2019",
+			"dom"
+		]
 	},
-	"exclude": [],
-	"extends": "../../tsconfig.json"
+	"references": [
+		{"path": "../web-lib"}
+	]
 }

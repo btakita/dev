@@ -13,7 +13,7 @@ export async function preload({ path, query, params }) {
 </script>
 
 <script>
-import A__Edit from '@myproject/content/A__Edit.svelte'
+import A__Edit from '@btakita/content/A__Edit.svelte'
 export let segment
 export let path
 export let a1__name = null

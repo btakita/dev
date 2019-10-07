@@ -1,23 +1,21 @@
 {
-	"name": "@myproject/web-lib",
+	"name": "@btakita/web-lib",
 	"version": "0.0.1",
 	"private": true,
 	"scripts": {
 		"build": "npm run clean && npm run compile",
 		"clean": "rm -rf .rpt2_cache; find ./*/index.* -type f -not -name 'index.ts' -delete",
-		"compile": "rollup -c",
+		"compile": "tsc -b",
 		"prepublishOnly": "npm run build",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"dependencies": {
-		"@ctx-core/function": "^10.5.14",
-		"@ctx-core/sapper": "^6.1.98",
-		"@ctx-core/store": "^11.1.90",
+		"@ctx-core/function": "^10.5.16",
+		"@ctx-core/sapper": "^6.2.1",
+		"@ctx-core/store": "^11.2.1",
 		"svelte": "^3.12.1"
 	},
 	"devDependencies": {
-		"rollup": "^1.23.1",
-		"rollup-plugin-typescript2": "^0.24.3",
 		"typescript": "^3.6.3"
 	}
 }
