@@ -2,4 +2,4 @@
 sudo systemctl start postgresql
 sudo systemctl start elasticsearch
 sudo systemctl start nginx
-
+sudo systemctl start redis
