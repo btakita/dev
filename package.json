@@ -2,6 +2,8 @@
 	"name": "root",
 	"private": true,
 	"devDependencies": {
+		"@ctx-core/lerna": "^2.3.10",
+		"@ctx-core/monorepo": "^5.4.0",
 		"lerna": "^3.19.0"
 	},
 	"workspaces": {

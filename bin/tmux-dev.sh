@@ -19,11 +19,10 @@ tmux send-keys 'tsc-build.sh -w' 'C-m'
 tmux select-pane -t 0
 tmux select-pane -t 2
 
-cd $DIR/packages/ctx-core
+cd $DIR/packages
 tmux new-window $SHELL
-tmux rename-window ctx-core
+tmux rename-window packages
 tmux split-window -v $SHELL
-tmux send-keys 'tig' 'C-m'
 tmux select-pane -t 0
 
 cd $DIR/packages/lerna-template
