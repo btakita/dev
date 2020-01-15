@@ -725,10 +725,29 @@
     "@ctx-core/object" "^6.3.10"
     "@ctx-core/set" "^6.1.22"
 
+"@ctx-core/array@^15.5.6":
+  version "15.5.6"
+  resolved "https://registry.yarnpkg.com/@ctx-core/array/-/array-15.5.6.tgz#591f40976aa186898dde863a55b8c0e30c95e884"
+  integrity sha512-QxdZdFI9KtvLeomdP7nSxzZ33Dl2L8WdalOm1FnS3aeBZ8EyApHmRc+Ur9qThr0qX7in056P3Psxt6HuKVkofQ==
+  dependencies:
+    "@ctx-core/combinators" "^4.2.13"
+    "@ctx-core/function" "^10.5.38"
+    "@ctx-core/object" "^8.0.0"
+    "@ctx-core/set" "^6.1.25"
+
 "@ctx-core/atob@^4.2.17":
   version "4.2.17"
   resolved "https://registry.yarnpkg.com/@ctx-core/atob/-/atob-4.2.17.tgz#e44f653f39177954d0ad084c3907a560c17a9d63"
   integrity sha512-7Kokkn4q/W0OyM277M3CFueLBeL8G38hmlJ8PmFnHH3EsCz12EcjoZ6IDw/om5wTEKKo3aVGxdV6Vxte8MhTtg==
+  dependencies:
+    "@ctx-core/logger" "^3.1.12"
+    atob "^2.1.2"
+    atob-lite "^2.0.0"
+
+"@ctx-core/atob@^4.2.18":
+  version "4.2.18"
+  resolved "https://registry.yarnpkg.com/@ctx-core/atob/-/atob-4.2.18.tgz#d0356863686473d76751815287678f092dd96be1"
+  integrity sha512-1u69MupKh5pgFWwROBF5Ey6IA7PpzS4Tp82Tu7Ryt9cHLygs0julcPxfbrnCELisv0+HpZEPvraT3P2lT1yIYA==
   dependencies:
     "@ctx-core/logger" "^3.1.12"
     atob "^2.1.2"
@@ -742,6 +761,15 @@
     "@ctx-core/array" "^15.5.0"
     "@ctx-core/function" "^10.5.35"
     "@ctx-core/object" "^6.3.10"
+
+"@ctx-core/cli-args@^3.1.37":
+  version "3.1.37"
+  resolved "https://registry.yarnpkg.com/@ctx-core/cli-args/-/cli-args-3.1.37.tgz#744ce0d5342c9709c3e8958ab3047a7e02da26c6"
+  integrity sha512-DZELuLVExFvHHh6RTL2MTy6Anz/bZ3EBxZQooWeWWIqIZ8w1uZ3ytb+DIhSziqueIHLZWbwjKuTLLbEa/eMHig==
+  dependencies:
+    "@ctx-core/array" "^15.5.6"
+    "@ctx-core/function" "^10.5.38"
+    "@ctx-core/object" "^8.0.0"
 
 "@ctx-core/combinators@^4.2.13":
   version "4.2.13"
@@ -757,6 +785,15 @@
     "@ctx-core/combinators" "^4.2.13"
     "@ctx-core/function" "^10.5.35"
 
+"@ctx-core/data@^1.1.36":
+  version "1.1.36"
+  resolved "https://registry.yarnpkg.com/@ctx-core/data/-/data-1.1.36.tgz#2b924fee35dbe626f75ed76df0601c0552869f78"
+  integrity sha512-CgYC8Uk922cUAg/yEmB6Vuku6Yx4rtBVu5vmd4p5me0g2Ult0CmjpcF8i/5Sg8CCcoYv4h1f6nrrOmeWrHmxkw==
+  dependencies:
+    "@ctx-core/array" "^15.5.6"
+    "@ctx-core/combinators" "^4.2.13"
+    "@ctx-core/function" "^10.5.38"
+
 "@ctx-core/dom@^5.10.38":
   version "5.10.38"
   resolved "https://registry.yarnpkg.com/@ctx-core/dom/-/dom-5.10.38.tgz#d8c84a4cd0ff1db5f38e44ebc23e71c733ea1941"
@@ -767,6 +804,17 @@
     "@ctx-core/logger" "^3.1.12"
     "@ctx-core/object" "^6.3.10"
     "@ctx-core/store" "^12.3.2"
+
+"@ctx-core/dom@^5.11.8":
+  version "5.11.8"
+  resolved "https://registry.yarnpkg.com/@ctx-core/dom/-/dom-5.11.8.tgz#dc3bb52a65bbede8efcd4a12bf7e47b19803ecc3"
+  integrity sha512-rOqNWa268enw5qEwx2zb0lzmshxz0kelfnVxS8iGAaaCcIwSIXkAFMatFr+1ogRhDna6DNma34AtWPzG4edY/g==
+  dependencies:
+    "@ctx-core/data" "^1.1.36"
+    "@ctx-core/html" "^6.1.42"
+    "@ctx-core/logger" "^3.1.12"
+    "@ctx-core/object" "^8.0.0"
+    "@ctx-core/store" "^13.1.5"
 
 "@ctx-core/env@^8.2.41":
   version "8.2.41"
@@ -779,6 +827,17 @@
     "@ctx-core/package" "^3.1.31"
     svelte "^3.16.5"
 
+"@ctx-core/env@^8.3.3":
+  version "8.3.3"
+  resolved "https://registry.yarnpkg.com/@ctx-core/env/-/env-8.3.3.tgz#3800ba1c044a6db940c44b7aa7298e4486986d66"
+  integrity sha512-MAS6h0IWbqUyD78jTirAzXlu3HXs6mu12PsbnSZ62SDWN8jN0pw5/3oG0Y1/VGZMe2Bx4GQF/Sjm3z0CsEdVfA==
+  dependencies:
+    "@ctx-core/error" "^5.1.65"
+    "@ctx-core/logger" "^3.1.12"
+    "@ctx-core/object" "^8.0.0"
+    "@ctx-core/package" "^3.1.38"
+    svelte "^3.17.0"
+
 "@ctx-core/error@^5.1.60":
   version "5.1.60"
   resolved "https://registry.yarnpkg.com/@ctx-core/error/-/error-5.1.60.tgz#779f9cea45ad072feec26754362237992a27eaa8"
@@ -786,6 +845,14 @@
   dependencies:
     "@ctx-core/logger" "^3.1.12"
     "@ctx-core/object" "^6.3.10"
+
+"@ctx-core/error@^5.1.65":
+  version "5.1.65"
+  resolved "https://registry.yarnpkg.com/@ctx-core/error/-/error-5.1.65.tgz#19bac0c296ba6af8eb197fa9accca7c65a9120bf"
+  integrity sha512-r+Qt1hIPsjQir+xMGC+pTYgjlwSEujBe+g6Tw2u5pCQxmAWfgb52s08RuQo+A7HqvgfyiHyL3ieSRwAeHtdDbg==
+  dependencies:
+    "@ctx-core/logger" "^3.1.12"
+    "@ctx-core/object" "^8.0.0"
 
 "@ctx-core/fontawesome@^10.2.35":
   version "10.2.35"
@@ -805,6 +872,13 @@
   version "10.5.35"
   resolved "https://registry.yarnpkg.com/@ctx-core/function/-/function-10.5.35.tgz#aabae4a1f4e25c86686a79ca8f22f3d125493ef4"
   integrity sha512-LjHlbbhhmBLU5sCwAtM8S0fXcxXATo+Em1fWkKMptNThb+7ga4ufwnhCmI9FVvX9Ul0WGNNatyPBK/Mkvmn5rA==
+
+"@ctx-core/function@^10.5.38":
+  version "10.5.38"
+  resolved "https://registry.yarnpkg.com/@ctx-core/function/-/function-10.5.38.tgz#921aab6b3e7eabb721f9d36ba573827877375ace"
+  integrity sha512-CuzjY7hNk00faglIeOOC70hxHYE2wGAouTJUN5868acUf7Sp/yPB1qqLrvAxgfis2lONreWkDscKmUmemKX2aA==
+  dependencies:
+    "@ctx-core/object" "^8.0.0"
 
 "@ctx-core/google@^5.1.43":
   version "5.1.43"
@@ -826,6 +900,16 @@
     "@ctx-core/logger" "^3.1.12"
     "@ctx-core/object" "^6.3.10"
     "@ctx-core/version__app" "^7.0.29"
+
+"@ctx-core/html@^6.1.42":
+  version "6.1.42"
+  resolved "https://registry.yarnpkg.com/@ctx-core/html/-/html-6.1.42.tgz#e1d8b2b1c68482ee2d3aadef0e21f45f494505a3"
+  integrity sha512-hyrZKdSMhDb+iDBa+XDY+ZxO9YS9FQJGjdrJXdtcSrvt4qOgsq/QXperWIo+VxaHaopUhybBytPsWfW+qcKT1w==
+  dependencies:
+    "@ctx-core/env" "^8.3.3"
+    "@ctx-core/logger" "^3.1.12"
+    "@ctx-core/object" "^8.0.0"
+    "@ctx-core/version__app" "^7.1.6"
 
 "@ctx-core/lerna@^2.3.15":
   version "2.3.15"
@@ -876,12 +960,27 @@
   dependencies:
     "@ctx-core/function" "^10.5.35"
 
+"@ctx-core/object@^8.0.0":
+  version "8.0.0"
+  resolved "https://registry.yarnpkg.com/@ctx-core/object/-/object-8.0.0.tgz#685c1df24e3c3fe5c3e71ff5b87e3d75fe760429"
+  integrity sha512-HeRca3R6rmHATuMIgVvbqXQRQvi61JiHljmmQyyM1ksu28LkIaFXTVVuWVwyRI7D7QzwB/HqotvN8Kt8mJalCg==
+  dependencies:
+    "@ctx-core/function" "^10.5.38"
+
 "@ctx-core/package@^3.1.31":
   version "3.1.31"
   resolved "https://registry.yarnpkg.com/@ctx-core/package/-/package-3.1.31.tgz#7fa436d9ccc3a438efae67193973e74538bce81c"
   integrity sha512-mb4oSsg0urRV/awQpcMby3DW7cZ/NNVJ5OGwe0Ie8kmqvfKsuuBA+aNq3Y6jtQttnd79lHMFhAFH1x3Idtl8ag==
   dependencies:
     "@ctx-core/cli-args" "^3.1.31"
+    esm "^3.2.25"
+
+"@ctx-core/package@^3.1.38":
+  version "3.1.38"
+  resolved "https://registry.yarnpkg.com/@ctx-core/package/-/package-3.1.38.tgz#da64fa6e2de52be3e4626c4c8f6c8ae9e2f05a4c"
+  integrity sha512-NXjoVDZIqfND/VO4RFws3tn5xDzLZMdSdahHMHbcSwdwG7UN3lJ7i2olVuKT6Ymv78GGwSC2fqEnk19rypuWfg==
+  dependencies:
+    "@ctx-core/cli-args" "^3.1.37"
     esm "^3.2.25"
 
 "@ctx-core/queue@^1.2.11":
@@ -918,12 +1017,35 @@
     node-sass-package-importer "^5.3.2"
     postcss "^7.0.25"
 
+"@ctx-core/sass@^6.4.7":
+  version "6.4.7"
+  resolved "https://registry.yarnpkg.com/@ctx-core/sass/-/sass-6.4.7.tgz#25644260f7051c4499689780699c09091a3ce4dc"
+  integrity sha512-SjgA1H7wZ6prMaz5JXTWOOHTOvOXVneDcdu6YzOZEEdNn12WC0XQc2eNU++WUNo3lL6goP/NGACrrqckojg6yw==
+  dependencies:
+    "@ctx-core/array" "^15.5.6"
+    "@ctx-core/logger" "^3.1.12"
+    "@ctx-core/string" "^4.3.11"
+    autoprefixer "^9.7.3"
+    cheerio "^1.0.0-rc.3"
+    domutils "^2.0.0"
+    htmlparser2 "^4.0.0"
+    node-sass "^4.13.0"
+    node-sass-package-importer "^5.3.2"
+    postcss "^7.0.26"
+
 "@ctx-core/set@^6.1.22":
   version "6.1.22"
   resolved "https://registry.yarnpkg.com/@ctx-core/set/-/set-6.1.22.tgz#27750ab963b436bccebda892c4ac3cbbadeb18f5"
   integrity sha512-vcUmQULS5fsnftFFCOJlgJDAFvZFD1yvoeoJZ2iQA/mUIpbhyFHGdFj7cEztjnPUu/FS5ZdgbcRvyzrPzYD6xA==
   dependencies:
     "@ctx-core/function" "^10.5.35"
+
+"@ctx-core/set@^6.1.25":
+  version "6.1.25"
+  resolved "https://registry.yarnpkg.com/@ctx-core/set/-/set-6.1.25.tgz#36c119e10f63825708b719e09af1cb12a5e246f5"
+  integrity sha512-++Ao2bq2KuZUgu0QCLXwWkcO6O/oNkt0EpilhlR4aySB57ZgyPoOz5p1VHZbhgPnf8Kt1iFUPXoqFsPetAO+vw==
+  dependencies:
+    "@ctx-core/function" "^10.5.38"
 
 "@ctx-core/store@^12.3.2":
   version "12.3.2"
@@ -936,10 +1058,26 @@
     "@ctx-core/object" "^6.3.10"
     svelte "^3.16.5"
 
+"@ctx-core/store@^13.1.5":
+  version "13.1.5"
+  resolved "https://registry.yarnpkg.com/@ctx-core/store/-/store-13.1.5.tgz#91227bd4649f6e65c0bdd5b3416dc6af7ad22cd9"
+  integrity sha512-jMuJqUbBdNdSAE11gK4nG5SRPW+p2MANP30sMlwGu9KtF8KcEp+4kKCqYEsFRIIwu4KpCENsd1nimo3cVuiRvA==
+  dependencies:
+    "@ctx-core/array" "^15.5.6"
+    "@ctx-core/combinators" "^4.2.13"
+    "@ctx-core/function" "^10.5.38"
+    "@ctx-core/object" "^8.0.0"
+    svelte "^3.17.0"
+
 "@ctx-core/string@^4.3.10":
   version "4.3.10"
   resolved "https://registry.yarnpkg.com/@ctx-core/string/-/string-4.3.10.tgz#657dd2847fa04cd685789957a4c3318ac23a2c5d"
   integrity sha512-70S6loldhcaCnsf8NtWy8WGz9YzfK6e7hi2jodhcJdt6m8FJYyoN3jEQDqJPtJlAfM+BDBM11g6D6gRAfRtnzQ==
+
+"@ctx-core/string@^4.3.11":
+  version "4.3.11"
+  resolved "https://registry.yarnpkg.com/@ctx-core/string/-/string-4.3.11.tgz#88885d4b4d8cf9a52706232a9c95fd977081c9c1"
+  integrity sha512-YBJZGL9OG1DPgidORBT7jyExEkE2FvcH2Ya4z9dF32EfJOSI+4b1OTJvex1W//8MxPwAJ+T1YwXoYSlRQtphnA==
 
 "@ctx-core/svelte@^5.2.7":
   version "5.2.7"
@@ -995,6 +1133,17 @@
     "@ctx-core/env" "^8.2.41"
     "@ctx-core/logger" "^3.1.12"
     svelte "^3.16.5"
+
+"@ctx-core/version__app@^7.1.6":
+  version "7.1.6"
+  resolved "https://registry.yarnpkg.com/@ctx-core/version__app/-/version__app-7.1.6.tgz#452109774e78509a0054eb08e263f872a18ea6b2"
+  integrity sha512-miqmq4SsUR5UgiaBiMYAF+SgfX5PLFn4Fs809Ai/4NcsmDTG7XOYnkcwpdOPNNWk3k+E9nHBYIGUkKlA+cYrfw==
+  dependencies:
+    "@ctx-core/atob" "^4.2.18"
+    "@ctx-core/env" "^8.3.3"
+    "@ctx-core/logger" "^3.1.12"
+    "@ctx-core/object" "^8.0.0"
+    svelte "^3.17.0"
 
 "@evocateur/libnpmaccess@^3.1.2":
   version "3.1.2"
@@ -6289,6 +6438,15 @@ postcss@^7.0.25:
     source-map "^0.6.1"
     supports-color "^6.1.0"
 
+postcss@^7.0.26:
+  version "7.0.26"
+  resolved "https://registry.yarnpkg.com/postcss/-/postcss-7.0.26.tgz#5ed615cfcab35ba9bbb82414a4fa88ea10429587"
+  integrity sha512-IY4oRjpXWYshuTDFxMVkJDtWIk2LhsTlu8bZnbEJA4+bYT16Lvpo8Qv6EvDumhYRgzjZl489pmsY3qVgJQ08nA==
+  dependencies:
+    chalk "^2.4.2"
+    source-map "^0.6.1"
+    supports-color "^6.1.0"
+
 private@^0.1.6:
   version "0.1.8"
   resolved "https://registry.yarnpkg.com/private/-/private-0.1.8.tgz#2381edb3689f7a53d653190060fcf822d2f368ff"
@@ -7480,6 +7638,11 @@ svelte@^3.16.5:
   resolved "https://registry.yarnpkg.com/svelte/-/svelte-3.16.5.tgz#d7073efcbf73ce6b112a858e17c81123ce9ec472"
   integrity sha512-iYOhJc7iczaonycuKjPgmy1lthhBoDOQo5UVhgKJRd3XYRdnYPPb0LvvJ0t7jqu5+15S0msMm06WSOKUvhEZsw==
 
+svelte@^3.17.0, svelte@^3.17.1:
+  version "3.17.1"
+  resolved "https://registry.yarnpkg.com/svelte/-/svelte-3.17.1.tgz#71aedbfb5bf831dad7b00a944f2fdded6b482184"
+  integrity sha512-IjX6agpbu01VHBaL/12oFem+ufPRyZNLkg4ay7lJl7IbUB/er90kdIsWCNZX44XaniSEhG/0Hja4GsrtufTwCw==
+
 swap-case@^1.1.0:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/swap-case/-/swap-case-1.1.2.tgz#c39203a4587385fad3c850a0bd1bcafa081974e3"
@@ -7714,6 +7877,11 @@ typescript@^3.7.3:
   version "3.7.3"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.7.3.tgz#b36840668a16458a7025b9eabfad11b66ab85c69"
   integrity sha512-Mcr/Qk7hXqFBXMN7p7Lusj1ktCBydylfQM/FZCk5glCNQJrCUKPkMHdo9R0MTFWsC/4kPFvDS0fDPvukfCkFsw==
+
+typescript@^3.7.4:
+  version "3.7.4"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.7.4.tgz#1743a5ec5fef6a1fa9f3e4708e33c81c73876c19"
+  integrity sha512-A25xv5XCtarLwXpcDNZzCGvW2D1S3/bACratYBx2sax8PefsFhlYmkQicKHvpYflFS8if4zne5zT5kpJ7pzuvw==
 
 uglify-js@^3.1.4, uglify-js@^3.5.1:
   version "3.6.0"
