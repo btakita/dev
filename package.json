@@ -2,15 +2,16 @@
 	"name": "root",
 	"private": true,
 	"devDependencies": {
-		"@ctx-core/lerna": "^2.3.44",
-		"@ctx-core/monorepo": "^6.4.8",
-		"lerna": "^3.20.2"
+		"@ctx-core/jetbrains": "^1.2.7",
+		"@ctx-core/lerna": "^3.0.3",
+		"@ctx-core/monorepo": "^7.0.2",
+		"lerna": "^3.21.0"
 	},
 	"workspaces": {
 		"packages": [
 			"packages/*",
 			"packages/lerna-template/packages/*",
-			"packages/ctx-core/packages/*"
+			"packages/@ctx-core/*"
 		]
 	}
 }
