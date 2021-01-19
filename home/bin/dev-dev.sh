@@ -1,2 +1,2 @@
 #!/bin/sh
-fork-termite-tmux.sh -t btakita/dev -d ~/work/dev/ $SHELL
+fork-st-tmux.sh -t btakita/dev ~/work/btakita/dev/

@@ -1,2 +1,2 @@
 #!/bin/sh
-fork-termite-tmux.sh -t censible -d ~/work/portfoliome/censible-core $SHELL
+fork-st-tmux.sh -t censible -d ~/work/btakita/portfoliome/censible-core $SHELL

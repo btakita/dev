@@ -1,2 +1,2 @@
 #!/bin/sh
-fork-termite-tmux.sh -t btakita/wjlawgroup -d ~/work/wjlawgroup/ $SHELL
+fork-st-tmux.sh -t btakita/wjlawgroup -d ~/work/btakita/wjlawgroup/ $SHELL

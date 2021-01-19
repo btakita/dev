@@ -1,2 +1,2 @@
 #!/bin/sh
-fork-termite-tmux.sh -t btakita/business -d ~/work/business/ $SHELL
+fork-st-tmux.sh -t btakita/business -d ~/work/btakita/business/ $SHELL

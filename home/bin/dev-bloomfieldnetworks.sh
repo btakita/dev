@@ -1,2 +1,2 @@
 #!/bin/sh
-fork-termite-tmux.sh -t bloomfieldnetworks -d ~/work/bloomfieldnetworks/ $SHELL
+fork-st-tmux.sh -t bloomfieldnetworks -d ~/work/btakita/bloomfieldnetworks/ $SHELL

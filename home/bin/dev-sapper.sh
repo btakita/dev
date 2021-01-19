@@ -1,2 +1,2 @@
 #!/bin/sh
-fork-termite-tmux.sh -t sapper -d ~/work/sveltejs/sapper/ $SHELL
+fork-st-tmux.sh -t sapper -d ~/work/btakita/sveltejs/sapper/ $SHELL

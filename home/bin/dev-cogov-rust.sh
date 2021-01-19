@@ -1,2 +1,2 @@
 #!/bin/sh
-fork-termite-tmux.sh -t cogov-rust -d ~/work/cogov/cogov-rust/ $SHELL
+fork-st-tmux.sh -t cogov-rust -d ~/work/btakita/cogov/cogov-rust/ $SHELL
