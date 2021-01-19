@@ -1,2 +1,2 @@
 #!/bin/sh
-fork-st-tmux.sh -t mudhoestudio.com -d ~/work/btakita/mudhoestudio.com/ $SHELL
+fork-st-tmux.sh -t mudhoestudio.com -d ~/work/mudhoestudio.com/ $SHELL
