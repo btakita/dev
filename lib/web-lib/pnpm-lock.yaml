@@ -1,0 +1,227 @@
+dependencies:
+  '@ctx-core/function': 16.9.1
+  '@ctx-core/sapper': 9.4.10
+  '@ctx-core/store': 23.4.1
+  svelte: 3.31.2
+devDependencies:
+  typescript: 4.1.3
+lockfileVersion: 5.2
+packages:
+  /@ctx-core/array/19.2.2:
+    dependencies:
+      '@ctx-core/combinators': 5.0.6
+      '@ctx-core/function': 16.9.1
+      '@ctx-core/object': 16.0.4
+      '@ctx-core/set': 8.0.21
+    dev: false
+    resolution:
+      integrity: sha512-5NRke8KceunfrGyfRLVfAOtoxEfQFi+7lfUBavDGuVR7Kn8snMjoi4Lk0fGxWBsyA+pMAJS4wP24xuOQJSPKpA==
+  /@ctx-core/combinators/5.0.6:
+    dev: false
+    resolution:
+      integrity: sha512-M0LkASqYhtKodqZ4dLrtABsUgHumfeNLTe6MYek/xQhYOSdWMPhmc7OX5lY8ajCk5p7rfhHr6oQ5QdAezMHfnQ==
+  /@ctx-core/event-log/1.0.3:
+    dependencies:
+      '@ctx-core/object': 16.0.4
+      '@ctx-core/store': 23.4.1
+    dev: false
+    resolution:
+      integrity: sha512-KzKL9WvVP9+iAr1tsoaGq1Dg17Z37yD+kA3mVPwGqNKAg5uaqQ9DdcdlvdYpTzmwIs2n6YoIuR/EhHPSEjeFHg==
+  /@ctx-core/function/16.9.1:
+    dev: false
+    resolution:
+      integrity: sha512-Pjo51KASNcmVzE+PMq+ol2k9aEM6Z7yosuaUmxMmY15apX8NSiG8bNkJBkoCtYiT41SBIDIuXB8KUD3e3/CCZA==
+  /@ctx-core/object/16.0.4:
+    dependencies:
+      '@ctx-core/function': 16.9.1
+    dev: false
+    resolution:
+      integrity: sha512-CLAXdN9WwldLxu1+BcLrEf88bBTSAIlmWP+VTFT/XWgqKNHjW8squtaDfYfykLUgC43DcR3jMgf/8A+lHA17HA==
+  /@ctx-core/sapper/9.4.10:
+    dependencies:
+      '@ctx-core/array': 19.2.2
+      '@ctx-core/event-log': 1.0.3
+      '@ctx-core/function': 16.9.1
+      '@ctx-core/object': 16.0.4
+      '@ctx-core/store': 23.4.1
+      resolve: 1.19.0
+      sapper: 0.28.10_svelte@3.31.2
+      svelte: 3.31.2
+    dev: false
+    resolution:
+      integrity: sha512-JafjZkIOO7oZUvS6hzeB9zNcWcjvtU/WrR5Q2LTJjNtg3IyI8jdg3TwL1D9lJS/StowEPRYx9jUq5GpJ9lTa4Q==
+  /@ctx-core/set/8.0.21:
+    dependencies:
+      '@ctx-core/function': 16.9.1
+    dev: false
+    resolution:
+      integrity: sha512-yP3smtpAHffi25LIcUSHg7ljDQY8ITVtNmQYcxds4h8vkSLk8QFMW9NfpSsjjPAu+c8BDHy5rrxbvmzlc8ooqQ==
+  /@ctx-core/store/23.4.1:
+    dependencies:
+      '@ctx-core/array': 19.2.2
+      '@ctx-core/combinators': 5.0.6
+      '@ctx-core/function': 16.9.1
+      '@ctx-core/object': 16.0.4
+      svelte: 3.31.2
+    dev: false
+    resolution:
+      integrity: sha512-47+aoasyhkxnBt4MOt8oh9Y7FpupYsuXWVIKyHFgTpODzcOT2e8FlAc4FLQ581zptX28F+hrVr/BGIp4Z9cOeQ==
+  /camel-case/3.0.0:
+    dependencies:
+      no-case: 2.3.2
+      upper-case: 1.1.3
+    dev: false
+    resolution:
+      integrity: sha1-yjw2iKTpzzpM2nd9xNy8cTJJz3M=
+  /clean-css/4.2.3:
+    dependencies:
+      source-map: 0.6.1
+    dev: false
+    engines:
+      node: '>= 4.0'
+    resolution:
+      integrity: sha512-VcMWDN54ZN/DS+g58HYL5/n4Zrqe8vHJpGA8KdgUXFU4fuP/aHNw8eld9SyEIyabIMJX/0RaY/fplOo5hYLSFA==
+  /commander/2.20.3:
+    dev: false
+    resolution:
+      integrity: sha512-GpVkmM8vF2vQUkj2LvZmD35JxeJOLCwJ9cUkugyk2nuhbv3+mJvpLYYt+0+USMxE+oj+ey/lJEnhZw75x/OMcQ==
+  /function-bind/1.1.1:
+    dev: false
+    resolution:
+      integrity: sha512-yIovAzMX49sF8Yl58fSCWJ5svSLuaibPxXQJFLmBObTuCr0Mf1KiPopGM9NiFjiYBCbfaa2Fh6breQ6ANVTI0A==
+  /has/1.0.3:
+    dependencies:
+      function-bind: 1.1.1
+    dev: false
+    engines:
+      node: '>= 0.4.0'
+    resolution:
+      integrity: sha512-f2dvO0VU6Oej7RkWJGrehjbzMAjFp5/VKPp5tTpWIV4JHHZK1/BxbFRtf/siA2SWTe09caDmVtYYzWEIbBS4zw==
+  /he/1.2.0:
+    dev: false
+    hasBin: true
+    resolution:
+      integrity: sha512-F/1DnUGPopORZi0ni+CvrCgHQ5FyEAHRLSApuYWMmrbSwoN2Mn/7k+Gl38gJnR7yyDZk6WLXwiGod1JOWNDKGw==
+  /html-minifier/4.0.0:
+    dependencies:
+      camel-case: 3.0.0
+      clean-css: 4.2.3
+      commander: 2.20.3
+      he: 1.2.0
+      param-case: 2.1.1
+      relateurl: 0.2.7
+      uglify-js: 3.12.4
+    dev: false
+    engines:
+      node: '>=6'
+    hasBin: true
+    resolution:
+      integrity: sha512-aoGxanpFPLg7MkIl/DDFYtb0iWz7jMFGqFhvEDZga6/4QTjneiD8I/NXL1x5aaoCp7FSIT6h/OhykDdPsbtMig==
+  /http-link-header/1.0.3:
+    dev: false
+    engines:
+      node: '>=4.0.0'
+    resolution:
+      integrity: sha512-nARK1wSKoBBrtcoESlHBx36c1Ln/gnbNQi1eB6MeTUefJIT3NvUOsV15bClga0k38f0q/kN5xxrGSDS3EFnm9w==
+  /is-core-module/2.2.0:
+    dependencies:
+      has: 1.0.3
+    dev: false
+    resolution:
+      integrity: sha512-XRAfAdyyY5F5cOXn7hYQDqh2Xmii+DEfIcQGxK/uNwMHhIkPWO0g8msXcbzLe+MpGoR951MlqM/2iIlU4vKDdQ==
+  /lower-case/1.1.4:
+    dev: false
+    resolution:
+      integrity: sha1-miyr0bno4K6ZOkv31YdcOcQujqw=
+  /no-case/2.3.2:
+    dependencies:
+      lower-case: 1.1.4
+    dev: false
+    resolution:
+      integrity: sha512-rmTZ9kz+f3rCvK2TD1Ue/oZlns7OGoIWP4fc3llxxRXlOkHKoWPPWJOfFYpITabSow43QJbRIoHQXtt10VldyQ==
+  /param-case/2.1.1:
+    dependencies:
+      no-case: 2.3.2
+    dev: false
+    resolution:
+      integrity: sha1-35T9jPZTHs915r75oIWPvHK+Ikc=
+  /path-parse/1.0.6:
+    dev: false
+    resolution:
+      integrity: sha512-GSmOT2EbHrINBf9SR7CDELwlJ8AENk3Qn7OikK4nFYAu3Ote2+JYNVvkpAEQm3/TLNEJFD/xZJjzyxg3KBWOzw==
+  /relateurl/0.2.7:
+    dev: false
+    engines:
+      node: '>= 0.10'
+    resolution:
+      integrity: sha1-VNvzd+UUQKypCkzSdGANP/LYiKk=
+  /resolve/1.19.0:
+    dependencies:
+      is-core-module: 2.2.0
+      path-parse: 1.0.6
+    dev: false
+    resolution:
+      integrity: sha512-rArEXAgsBG4UgRGcynxWIWKFvh/XZCcS8UJdHhwy91zwAvCZIbcs+vAbflgBnNjYMs/i/i+/Ux6IZhML1yPvxg==
+  /sapper/0.28.10_svelte@3.31.2:
+    dependencies:
+      html-minifier: 4.0.0
+      http-link-header: 1.0.3
+      shimport: 2.0.5
+      source-map: 0.6.1
+      sourcemap-codec: 1.4.8
+      string-hash: 1.1.3
+      svelte: 3.31.2
+    dev: false
+    hasBin: true
+    peerDependencies:
+      svelte: ^3.17.3
+    resolution:
+      integrity: sha512-Z6OpuDOHxiRHKd7JCjHaDe8uOM2fFZxpTLsj/0Ib4sM034xstEvNNUtdY7Pg/a85kP3cFCnkNiM1v7W37vzDGg==
+  /shimport/2.0.5:
+    dev: false
+    resolution:
+      integrity: sha512-H2FeQyImK4CFhGG1wVhHEB1hASWz+WQK6t2gMP5lk+b0PW30XSrsryDONDBwF1n6hBKsmbr0REfTinaNdEkcPQ==
+  /source-map/0.6.1:
+    dev: false
+    engines:
+      node: '>=0.10.0'
+    resolution:
+      integrity: sha512-UjgapumWlbMhkBgzT7Ykc5YXUT46F0iKu8SGXq0bcwP5dz/h0Plj6enJqjz1Zbq2l5WaqYnrVbwWOWMyF3F47g==
+  /sourcemap-codec/1.4.8:
+    dev: false
+    resolution:
+      integrity: sha512-9NykojV5Uih4lgo5So5dtw+f0JgJX30KCNI8gwhz2J9A15wD0Ml6tjHKwf6fTSa6fAdVBdZeNOs9eJ71qCk8vA==
+  /string-hash/1.1.3:
+    dev: false
+    resolution:
+      integrity: sha1-6Kr8CsGFW0Zmkp7X3RJ1311sgRs=
+  /svelte/3.31.2:
+    dev: false
+    engines:
+      node: '>= 8'
+    resolution:
+      integrity: sha512-TxZGrXzX2ggFH3BIKY5fmbeMdJuZrMIMDYPMX6R9255bueuYIuVaBQSLUeY2oD7W4IdeqRZiAVGCjDw2POKBRA==
+  /typescript/4.1.3:
+    dev: true
+    engines:
+      node: '>=4.2.0'
+    hasBin: true
+    resolution:
+      integrity: sha512-B3ZIOf1IKeH2ixgHhj6la6xdwR9QrLC5d1VKeCSY4tvkqhF2eqd9O7txNlS0PO3GrBAFIdr3L1ndNwteUbZLYg==
+  /uglify-js/3.12.4:
+    dev: false
+    engines:
+      node: '>=0.8.0'
+    hasBin: true
+    resolution:
+      integrity: sha512-L5i5jg/SHkEqzN18gQMTWsZk3KelRsfD1wUVNqtq0kzqWQqcJjyL8yc1o8hJgRrWqrAl2mUFbhfznEIoi7zi2A==
+  /upper-case/1.1.3:
+    dev: false
+    resolution:
+      integrity: sha1-9rRQHC7EzdJrp4vnIilh3ndiFZg=
+specifiers:
+  '@ctx-core/function': ^16.9.1
+  '@ctx-core/sapper': ^9.4.10
+  '@ctx-core/store': ^23.4.1
+  svelte: ^3.31.2
+  typescript: ^4.1.3

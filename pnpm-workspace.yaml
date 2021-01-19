@@ -1,0 +1,5 @@
+packages:
+  - 'app/*'
+  - 'lib/*'
+  - 'lib/*/lib/*'
+  - 'tools/*'

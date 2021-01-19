@@ -1,5 +1,5 @@
 {
-	"name": "@btakita/content",
+	"name": "@btakita/layout",
 	"version": "0.0.1",
 	"private": true,
 	"scripts": {
@@ -9,8 +9,16 @@
 		"prepublishOnly": "npm run build",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
+	"dependencies": {
+		"@btakita/web-lib": "workspace:^0.0.1",
+		"@ctx-core/fontawesome": "^11.0.118",
+		"@ctx-core/nav": "^14.1.32",
+		"@ctx-core/sapper": "^9.4.10",
+		"@ctx-core/sass": "^8.1.14",
+		"@ctx-core/theme": "^2.1.34",
+		"svelte": "^3.31.2"
+	},
 	"devDependencies": {
-		"svelte": "^3.24.1",
-		"typescript": "^4.0.2"
+		"typescript": "^4.1.3"
 	}
 }

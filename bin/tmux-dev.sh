@@ -8,39 +8,21 @@ tmux split-window -v $SHELL
 tmux send-keys 'tig' 'C-m'
 tmux select-pane -t 0
 
-cd $DIR/packages/_dev-web
+cd $DIR/app/dev-web
 tmux new-window $SHELL
 tmux rename-window processes
 tmux split-window -h $SHELL
 tmux select-pane -t 0
-tmux send-keys 'yarn run dev' 'C-m'
+tmux send-keys 'pnpm run dev' 'C-m'
 tmux split-window -v $SHELL
 tmux send-keys 'tsc-build.sh -w' 'C-m'
 tmux select-pane -t 0
 tmux select-pane -t 2
 
-cd $DIR/packages
+cd $DIR/lib
 tmux new-window $SHELL
-tmux rename-window packages
+tmux rename-window lib
 tmux split-window -v $SHELL
 tmux select-pane -t 0
-
-cd $DIR/packages/lerna-template
-tmux new-window $SHELL
-tmux rename-window lerna-template
-tmux split-window -v $SHELL
-tmux select-pane -t 1
-tmux send-keys 'tig' 'C-m'
-tmux select-pane -t 0
-
-cd $DIR/packages/sapper-template
-tmux new-window $SHELL
-tmux rename-window sapper-template
-tmux split-window -h $SHELL
-tmux select-pane -t 0
-tmux send-keys 'yarn run dev' 'C-m'
-tmux split-window -v $SHELL
-tmux send-keys 'tig' 'C-m'
-tmux select-pane -t 1
 
 tmux select-window -t 0

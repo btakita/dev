@@ -1,0 +1,11 @@
+{
+	"name": "@btakita/css",
+	"version": "0.0.1",
+	"private": true,
+	"main": "./src/index.js",
+	"module": "./src/index.js",
+	"types": "./src/index.ts",
+	"devDependencies": {
+		"@ctx-core/sass": "^8.1.14"
+	}
+}
