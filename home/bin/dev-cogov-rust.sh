@@ -1,2 +1,3 @@
 #!/bin/sh
-fork-st-tmux.sh -t cogov-rust -d ~/work/cogov/cogov-rust/
+cd ~/work/cogov/cogov-rust/
+tmux new -s cogov-rust

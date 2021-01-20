@@ -1,2 +1,3 @@
 #!/bin/sh
-fork-st-tmux.sh -t briantakita.com -d ~/work/briantakita.com/
+cd ~/work/briantakita.com/
+tmux new -s briantakita.com

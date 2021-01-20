@@ -1,2 +1,3 @@
 #!/bin/sh
-fork-st-tmux.sh -t manufacturingchina/rails -d ~/work/manufacturingchina/mfg-china-app/
+cd ~/work/manufacturingchina/mfg-china-app/
+tmux -s manufacturingchina/rails

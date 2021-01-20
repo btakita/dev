@@ -1,2 +1,3 @@
 #!/bin/sh
-fork-st-tmux.sh -t sapper -d ~/work/sveltejs/sapper/
+cd ~/work/sveltejs/sapper/
+tmux -s sapper

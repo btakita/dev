@@ -1,2 +1,3 @@
 #!/bin/sh
-fork-st-tmux.sh -t censible-ghost-theme -d ~/work/portfoliome/censible-ghost-theme
+cd ~/work/portfoliome/censible-ghost-theme
+tmux new -s censible-ghost-theme

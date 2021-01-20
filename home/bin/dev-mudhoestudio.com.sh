@@ -1,2 +1,3 @@
 #!/bin/sh
-fork-st-tmux.sh -t mudhoestudio.com -d ~/work/mudhoestudio.com/
+cd ~/work/mudhoestudio.com/
+tmux -s mudhoestudio.com

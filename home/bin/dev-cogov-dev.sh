@@ -1,2 +1,3 @@
 #!/bin/sh
-fork-st-tmux.sh -t cogov-dev -d ~/work/cogov/cogov-dev/
+cd ~/work/cogov/cogov-dev/
+tmux new -s cogov-dev

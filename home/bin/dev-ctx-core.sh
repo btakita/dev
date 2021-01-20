@@ -1,2 +1,3 @@
 #!/bin/sh
-fork-st-tmux.sh -t ctx-core -d ~/work/ctx-core/ctx-core
+cd ~/work/ctx-core/ctx-core
+tmux new -s ctx-core

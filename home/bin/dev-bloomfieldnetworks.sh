@@ -1,2 +1,3 @@
 #!/bin/sh
-fork-st-tmux.sh -t bloomfieldnetworks -d ~/work/bloomfieldnetworks/
+cd ~/work/bloomfieldnetworks/
+tmux new -s bloomfieldnetworks

@@ -1,2 +1,3 @@
 #!/bin/sh
-fork-st-tmux.sh -t svelte -d ~/work/sveltejs/svelte/
+cd ~/work/sveltejs/svelte/
+tmux -s svelte

@@ -1,2 +1,3 @@
 #!/bin/sh
-fork-st-tmux.sh -t btakita/business -d ~/work/btakita/business/
+cd ~/work/btakita/business/
+tmux new -s btakita/business
