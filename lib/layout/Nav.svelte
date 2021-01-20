@@ -1,17 +1,19 @@
 <script>
-	import { __path__sapper } from '@ctx-core/sapper/store'
-	import { __path__home } from '@btakita/web-lib/store'
-	import {
-		__theme__invert,
-		invert__theme,
-		__class__theme__invert,
-	} from '@ctx-core/theme/store'
-	import Handle__Nav from '@ctx-core/nav/Handle__Nav.svelte'
-	import Content__Nav from '@ctx-core/nav/Content__Nav.svelte'
-	import Item__Nav from '@ctx-core/nav/Item__Nav.svelte'
-	import FA_project_diagram_solid from '@ctx-core/fontawesome/ui/FA-project-diagram-solid.svelte'
-	import FA_sun_solid from '@ctx-core/fontawesome/ui/FA-sun-solid.svelte'
-	import FA_moon_regular from '@ctx-core/fontawesome/ui/FA-moon-regular.svelte'
+import { page_path_b } from '@ctx-core/sapper'
+import { __path__home } from '@btakita/web-lib/store'
+import {
+	__theme__invert,
+	invert__theme,
+	__class__theme__invert,
+} from '@ctx-core/theme/store'
+import Handle__Nav from '@ctx-core/nav/Handle__Nav.svelte'
+import Content__Nav from '@ctx-core/nav/Content__Nav.svelte'
+import Item__Nav from '@ctx-core/nav/Item__Nav.svelte'
+import FA_project_diagram_solid from '@ctx-core/fontawesome/ui/FA-project-diagram-solid.svelte'
+import FA_sun_solid from '@ctx-core/fontawesome/ui/FA-sun-solid.svelte'
+import FA_moon_regular from '@ctx-core/fontawesome/ui/FA-moon-regular.svelte'
+export let ctx
+const page_path = page_path_b(ctx)
 </script>
 
 <Handle__Nav class="Handle__Nav__Holochain {$__class__theme__invert}"></Handle__Nav>
