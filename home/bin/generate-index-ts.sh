@@ -2,6 +2,7 @@
 
 ls $1 | \
  	sort | \
+	grep -e '\.ts$' | \
  	sed 's/\.ts$//' | \
 	uniq | \
 	grep -v -e '^index$' | \
