@@ -10,10 +10,10 @@
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"dependencies": {
-		"@ctx-core/function": "^16.9.1",
-		"@ctx-core/sapper": "^9.4.10",
-		"@ctx-core/store": "^23.4.1",
-		"svelte": "^3.31.2"
+		"@ctx-core/function": "^17.1.0",
+		"@ctx-core/sapper": "^10.0.9",
+		"@ctx-core/store": "^24.0.8",
+		"svelte": "^3.32.1"
 	},
 	"devDependencies": {
 		"typescript": "^4.1.3"
