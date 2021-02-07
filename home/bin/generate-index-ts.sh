@@ -6,4 +6,4 @@ ls $1 | \
 	uniq | \
 	grep -v -e '^index$' | \
 	LC_COLLATE=C sort | \
-	awk '{print "import \47./"$1"\47"}'
+	awk '{print "export * from \47./"$1"\47"}'
