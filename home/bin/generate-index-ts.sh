@@ -3,6 +3,7 @@
 ls $1 | \
  	sort | \
 	grep -e '\.ts$' | \
+	grep -v -e '\.d\.ts$' | \
  	sed 's/\.ts$//' | \
 	uniq | \
 	grep -v -e '^index$' | \
