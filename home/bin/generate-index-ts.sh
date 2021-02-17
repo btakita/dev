@@ -7,5 +7,5 @@ ls $1 | \
  	sed 's/\.ts$//' | \
 	uniq | \
 	grep -v -e '^index$' | \
-	LC_COLLATE=C sort | \
+  sort -k4 | \
 	awk '{print "export * from \47./"$1"\47"}'
