@@ -3,9 +3,9 @@
 	"private": true,
 	"devDependencies": {
 		"@changesets/cli": "^2.14.1",
-		"@ctx-core/jetbrains": "^4.0.7",
+		"@ctx-core/jetbrains": "^4.0.16",
 		"@ctx-core/lerna": "^5.1.30",
-		"@ctx-core/monorepo": "^15.0.11"
+		"@ctx-core/monorepo": "^15.0.26"
 	},
 	"workspaces": {
 		"packages": [

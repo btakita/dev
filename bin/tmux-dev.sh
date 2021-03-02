@@ -1,5 +1,5 @@
 #!/bin/sh
-DIR_DEFAULT=~/work/btakita/dev/
+DIR_DEFAULT=$(dirname $0)/..
 DIR="${DIR:-$DIR_DEFAULT}"
 
 cd $DIR
