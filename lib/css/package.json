@@ -6,6 +6,6 @@
 	"module": "./src/index.js",
 	"types": "./src/index.ts",
 	"devDependencies": {
-		"@ctx-core/sass": "^9.2.1"
+		"@ctx-core/sass": "^9.2.10"
 	}
 }
