@@ -1,3 +1,2 @@
 #!/bin/sh
-cd ~/work/portfoliome/censible-ghost-theme
-tmux new -s censible-ghost-theme
+open-dev-tmux.sh portfoliome/censible-ghost-theme

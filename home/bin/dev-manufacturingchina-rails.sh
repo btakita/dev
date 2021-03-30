@@ -1,3 +1,2 @@
 #!/bin/sh
-cd ~/work/manufacturingchina/mfg-china-app/
-tmux -s manufacturingchina/rails
+open-dev-tmux.sh manufacturingchina/mfg-china-app

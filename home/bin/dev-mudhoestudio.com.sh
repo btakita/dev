@@ -1,3 +1,2 @@
 #!/bin/sh
-cd ~/work/mudhoestudio.com/
-tmux -s mudhoestudio.com
+open-dev-tmux.sh mudhoestudio.com

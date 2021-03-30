@@ -1,3 +1,2 @@
 #!/bin/sh
-cd ~/work/bloomfieldnetworks/
-tmux new -s bloomfieldnetworks
+open-dev-tmux.sh bloomfieldnetworks

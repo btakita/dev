@@ -1,3 +1,2 @@
 #!/bin/sh
-cd ~/work/sveltejs/svelte/
-tmux -s svelte
+open-dev-tmux.sh sveltejs/svelte

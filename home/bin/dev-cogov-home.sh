@@ -1,3 +1,2 @@
 #!/bin/sh
-cd ~/work/cogov/home/
-tmux new -s cogov-home
+open-dev-tmux.sh cogov/home

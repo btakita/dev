@@ -1,3 +1,2 @@
 #!/bin/sh
-cd ~/work/lastinglogic/dev/
-tmux -s lastinglogic/dev
+open-dev-tmux.sh lastinglogic/dev

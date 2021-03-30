@@ -1,3 +1,2 @@
 #!/bin/sh
-cd ~/work/holochain/
-tmux new -s holochain
+open-dev-tmux.sh /holochain/

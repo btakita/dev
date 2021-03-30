@@ -1,3 +1,2 @@
 #!/bin/sh
-cd ~/work/briantakita.com/
-tmux new -s briantakita.com
+open-dev-tmux.sh briantakita.com

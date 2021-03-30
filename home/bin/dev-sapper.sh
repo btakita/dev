@@ -1,3 +1,2 @@
 #!/bin/sh
-cd ~/work/sveltejs/sapper/
-tmux -s sapper
+open-dev-tmux.sh sveltejs/sapper

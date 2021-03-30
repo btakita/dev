@@ -1,3 +1,2 @@
 #!/bin/sh
-cd ~/work/wjlawgroup/
-tmux -s btakita/wjlawgroup
+open-dev-tmux.sh wjlawgroup
