@@ -16,7 +16,7 @@
 		"@ctx-core/sapper": "^10.2.5",
 		"@ctx-core/sass": "^9.2.14",
 		"@ctx-core/theme": "^3.0.35",
-		"svelte": "^3.36.0"
+		"svelte": "^3.37.0"
 	},
 	"devDependencies": {
 		"typescript": "^4.2.3"

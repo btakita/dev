@@ -16,7 +16,7 @@
 		"@ctx-core/object": "^17.4.3",
 		"@ctx-core/store": "^24.1.16",
 		"path": "^0.12.7",
-		"svelte": "^3.36.0",
+		"svelte": "^3.37.0",
 		"typescript": "^4.2.3"
 	}
 }
