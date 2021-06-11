@@ -2,10 +2,10 @@
 	"name": "root",
 	"private": true,
 	"devDependencies": {
-		"@changesets/cli": "^2.14.1",
-		"@ctx-core/jetbrains": "^4.0.29",
+		"@changesets/cli": "^2.16.0",
+		"@ctx-core/jetbrains": "^5.0.3",
 		"@ctx-core/lerna": "^5.1.34",
-		"@ctx-core/monorepo": "^15.0.43"
+		"@ctx-core/monorepo": "^16.0.18"
 	},
 	"workspaces": {
 		"packages": [
