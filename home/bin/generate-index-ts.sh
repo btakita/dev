@@ -2,7 +2,7 @@
 
 cd $1
 
-find * -maxdepth 1 -type d | \
+find * -maxdepth 0 -type d | \
 	sort | \
 	sort -k4 | \
 	awk '{print "export * from \47./"$1"\47"}'

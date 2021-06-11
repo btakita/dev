@@ -32,10 +32,10 @@ importers:
       '@ctx-core/google': ^8.0.8
       '@ctx-core/html': ^9.0.7
       '@ctx-core/markdown': ^11.0.31
-      '@ctx-core/nav': ^16.0.25
+      '@ctx-core/nav': ^16.0.26
       '@ctx-core/object': ^19.3.0
       '@ctx-core/sapper': ^11.0.37
-      '@ctx-core/sass': ^10.0.16
+      '@ctx-core/sass': ^10.0.17
       '@ctx-core/theme': ^4.0.22
       '@ctx-core/uikit': ^2.3.5
       '@ctx-core/uuid': ^6.0.2
@@ -83,10 +83,10 @@ importers:
       '@ctx-core/google': 8.0.8
       '@ctx-core/html': 9.0.7
       '@ctx-core/markdown': 11.0.31
-      '@ctx-core/nav': 16.0.25
+      '@ctx-core/nav': 16.0.26
       '@ctx-core/object': 19.3.0
       '@ctx-core/sapper': 11.0.37
-      '@ctx-core/sass': 10.0.16
+      '@ctx-core/sass': 10.0.17
       '@ctx-core/theme': 4.0.22
       '@ctx-core/uikit': 2.3.5
       '@ctx-core/uuid': 6.0.2
@@ -119,9 +119,9 @@ importers:
 
   lib/css:
     specifiers:
-      '@ctx-core/sass': ^10.0.16
+      '@ctx-core/sass': ^10.0.17
     devDependencies:
-      '@ctx-core/sass': 10.0.16
+      '@ctx-core/sass': 10.0.17
 
   lib/highlight.js:
     specifiers:
@@ -137,18 +137,18 @@ importers:
     specifiers:
       '@btakita/web-lib': workspace:^0.0.1
       '@ctx-core/fontawesome': ^13.0.22
-      '@ctx-core/nav': ^16.0.25
+      '@ctx-core/nav': ^16.0.26
       '@ctx-core/sapper': ^11.0.37
-      '@ctx-core/sass': ^10.0.16
+      '@ctx-core/sass': ^10.0.17
       '@ctx-core/theme': ^4.0.22
       svelte: ^3.38.2
       typescript: ^4.3.2
     dependencies:
       '@btakita/web-lib': link:../web-lib
       '@ctx-core/fontawesome': 13.0.22
-      '@ctx-core/nav': 16.0.25
+      '@ctx-core/nav': 16.0.26
       '@ctx-core/sapper': 11.0.37
-      '@ctx-core/sass': 10.0.16
+      '@ctx-core/sass': 10.0.17
       '@ctx-core/theme': 4.0.22
       svelte: 3.38.2
     devDependencies:
@@ -1604,8 +1604,8 @@ packages:
       semver: 7.3.5
     dev: true
 
-  /@ctx-core/nav/16.0.25:
-    resolution: {integrity: sha512-TpAbVt6FsXa8JLDzf9kOe+2/pBLHG6VKEYreY/xZDp1jgE2ouOryUmgGH7oETIqKnO4qHPcdurqNPg2CUTqeYQ==}
+  /@ctx-core/nav/16.0.26:
+    resolution: {integrity: sha512-R7rzS6GnqCXszyy2gw8jVNLzh59OD5XANJtjOCT7NZu+mQ21PoiLDlBYz5LxMmAVZOoSUTkO7hbf/IPF/fVm+Q==}
     dependencies:
       '@ctx-core/function': 18.1.3
       '@ctx-core/object': 19.3.0
@@ -1646,8 +1646,8 @@ packages:
       resolve: 1.20.0
       svelte: 3.38.2
 
-  /@ctx-core/sass/10.0.16:
-    resolution: {integrity: sha512-Ihu7LWlsniKuSJpbBbc12elPEG53KlTG+ZjkVb2mULzrYUxlXhLKa2nE6rGOeyqJeZmoJ7dT+y8LOyBzpN/PMQ==}
+  /@ctx-core/sass/10.0.17:
+    resolution: {integrity: sha512-QvHONhn5bUy1s0uLjw2D0XPeCDhAeLcEBWNvc1kE4AYzNDHF6ItyqQKTr1NhUsv81aksmEoztE/EdPgc/7AAGg==}
     dependencies:
       '@ctx-core/array': 21.3.2
       '@ctx-core/string': 7.0.5
