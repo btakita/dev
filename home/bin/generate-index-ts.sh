@@ -1,6 +1,13 @@
 #!/bin/sh
 
-ls $1 | \
+cd $1
+
+find * -maxdepth 1 -type d | \
+	sort | \
+	sort -k4 | \
+	awk '{print "export * from \47./"$1"\47"}'
+
+ls . | \
  	sort | \
 	grep -e '\.ts$' | \
 	grep -v -e '\.d\.ts$' | \
