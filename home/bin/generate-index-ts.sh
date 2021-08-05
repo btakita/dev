@@ -15,4 +15,4 @@ ls . | \
 	uniq | \
 	grep -v -e '^index$' | \
   sort -k4 | \
-	awk '{print "export * from \47./"$1"\47"}'
+	awk '{print "export * from \47./"$1".js\47"}'
