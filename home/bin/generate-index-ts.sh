@@ -5,7 +5,7 @@ cd $1
 find * -maxdepth 0 -type d | \
 	sort | \
 	sort -k4 | \
-	awk '{print "export * from \47./"$1"\47"}'
+	awk '{print "export * from \47./"$1"/index.js\47"}'
 
 ls . | \
  	sort | \
