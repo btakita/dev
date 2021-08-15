@@ -5,7 +5,7 @@
 		"@changesets/cli": "^2.16.0",
 		"@ctx-core/jetbrains": "^7.0.16",
 		"@ctx-core/lerna": "^5.1.34",
-		"@ctx-core/monorepo": "^18.0.24"
+		"@ctx-core/monorepo": "^18.0.29"
 	},
 	"workspaces": {
 		"packages": [
