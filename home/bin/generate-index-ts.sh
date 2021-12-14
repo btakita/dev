@@ -7,12 +7,44 @@ find * -maxdepth 0 -type d | \
 	sort -k4 | \
 	awk '{print "export * from \47./"$1"/index.js\47"}'
 
-ls . | \
- 	sort | \
-	grep -e '\.ts$' -e '\.tsx$' -e '\.svelte$' | \
-	grep -v -e '\.d\.ts$' | \
- 	sed 's/\.ts$//' | \
+F="$(ls . | sort | grep '\.svelte$')"
+if [[ ! -z $F ]]; then
+	echo "import 'svelte'"
+fi
+
+echo "$F" | \
+ 	sed 's/\.svelte$//' | \
 	uniq | \
-	grep -v -e '^index$' | \
   sort -k4 | \
-	awk '{print "export * from \47./"$1".js\47"}'
+	awk '{print "echo "$1" $(echo "$1" | tr '\''-'\'' '\''_'\'')"}' | sh | \
+	awk '{print "export * as "$2" from \47./"$1".svelte\47"}'
+
+F="$(
+	ls . | \
+	sort | \
+	grep -e '\.ts$' | \
+	grep -v -e '\.d\.ts$' | \
+	sed 's/\.ts$//' | \
+	uniq | \
+	grep -v -e '^index$'
+)"
+if [[ ! -z $F ]]; then
+	echo "$F" \
+		sort -k4 | \
+		awk '{print "export * from \47./"$1".js\47"}'
+fi
+
+F="$(
+	ls . | \
+	sort | \
+	grep -e '\.tsx$' | \
+	grep -v -e '\.d\.tsx$' | \
+	sed 's/\.tsx$//' | \
+	uniq | \
+	grep -v -e '^index$'
+)"
+if [[ ! -z $F ]]; then
+	echo "$F" \
+		sort -k4 | \
+		awk '{print "export * from \47./"$1".jsx\47"}'
+fi
