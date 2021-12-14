@@ -9,7 +9,7 @@ find * -maxdepth 0 -type d | \
 
 ls . | \
  	sort | \
-	grep -e '\.ts$' | \
+	grep -e '\.ts$' -e '\.tsx$' -e '\.svelte$' | \
 	grep -v -e '\.d\.ts$' | \
  	sed 's/\.ts$//' | \
 	uniq | \
