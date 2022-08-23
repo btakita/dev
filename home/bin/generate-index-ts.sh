@@ -23,7 +23,6 @@ F="$(
 	ls . | \
 	sort | \
 	grep -e '\.ts$' | \
-	grep -v -e '\.d\.ts$' | \
 	sed 's/\.ts$//' | \
 	uniq | \
 	grep -v -e '^index$'
@@ -38,7 +37,6 @@ F="$(
 	ls . | \
 	sort | \
 	grep -e '\.tsx$' | \
-	grep -v -e '\.d\.tsx$' | \
 	sed 's/\.tsx$//' | \
 	uniq | \
 	grep -v -e '^index$'
