@@ -2,9 +2,9 @@
 	"name": "root",
 	"private": true,
 	"devDependencies": {
-		"@changesets/cli": "^2.24.1",
+		"@changesets/cli": "^2.24.3",
 		"@ctx-core/jetbrains": "^7.1.45",
-		"@ctx-core/monorepo": "^18.4.6"
+		"@ctx-core/monorepo": "^18.4.9"
 	},
 	"workspaces": {
 		"packages": [

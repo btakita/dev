@@ -12,10 +12,10 @@
 	"dependencies": {
 		"@btakita/web-lib": "workspace:^0.0.1",
 		"@ctx-core/fontawesome": "^16.0.31",
-		"@ctx-core/nav": "^22.1.1",
-		"@ctx-core/sapper": "^20.0.6",
-		"@ctx-core/sass": "^12.1.56",
-		"@ctx-core/theme": "^9.1.4",
+		"@ctx-core/nav": "^22.2.0",
+		"@ctx-core/sapper": "^20.0.8",
+		"@ctx-core/sass": "^12.1.60",
+		"@ctx-core/theme": "^9.1.6",
 		"svelte": "^3.49.0"
 	},
 	"devDependencies": {
