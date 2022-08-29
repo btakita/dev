@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 alias ga="git add"
 alias gb="git branch"
 alias gs="git status"

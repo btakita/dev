@@ -1,5 +1,4 @@
-#!/bin/bash
-
+#!/bin/sh
 alias be='bundle exec'
 alias berails='bundle exec rails'
 alias berailsc='bundle exec rails c'
