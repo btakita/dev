@@ -4,7 +4,7 @@
 	"devDependencies": {
 		"@changesets/cli": "^2.24.3",
 		"@ctx-core/jetbrains": "^7.1.45",
-		"@ctx-core/monorepo": "^18.4.9"
+		"@ctx-core/monorepo": "^18.4.10"
 	},
 	"workspaces": {
 		"packages": [

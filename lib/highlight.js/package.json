@@ -5,7 +5,7 @@
 	"main": "./lib.js",
 	"module": "./lib.js",
 	"dependencies": {
-		"@ctx-core/dom": "^11.1.26",
+		"@ctx-core/dom": "^11.1.27",
 		"highlight.js": "^11.6.0",
 		"svelte": "^3.49.0"
 	}
