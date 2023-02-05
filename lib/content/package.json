@@ -13,10 +13,10 @@
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"devDependencies": {
-		"@ctx-core/object": "^22.2.7",
+		"@ctx-core/object": "^24.1.2",
 		"@ctx-core/store": "^27.0.55",
 		"path": "^0.12.7",
-		"svelte": "^3.49.0",
-		"typescript": "^4.8.2"
+		"svelte": "^3.55.1",
+		"typescript": "^4.9.5"
 	}
 }

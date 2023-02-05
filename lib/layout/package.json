@@ -11,14 +11,14 @@
 	},
 	"dependencies": {
 		"@btakita/web-lib": "workspace:^0.0.1",
-		"@ctx-core/fontawesome": "^16.0.31",
-		"@ctx-core/nav": "^22.2.1",
-		"@ctx-core/sapper": "^20.0.9",
-		"@ctx-core/sass": "^12.1.60",
-		"@ctx-core/theme": "^9.1.6",
-		"svelte": "^3.49.0"
+		"@ctx-core/fontawesome": "^16.0.59",
+		"@ctx-core/nav": "^22.2.23",
+		"@ctx-core/sapper": "^20.0.41",
+		"@ctx-core/sass": "^12.1.94",
+		"@ctx-core/theme": "^9.2.20",
+		"svelte": "^3.55.1"
 	},
 	"devDependencies": {
-		"typescript": "^4.8.2"
+		"typescript": "^4.9.5"
 	}
 }
