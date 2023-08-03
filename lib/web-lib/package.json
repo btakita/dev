@@ -13,7 +13,7 @@
 		"@ctx-core/function": "^21.6.1",
 		"@ctx-core/sapper": "^20.0.41",
 		"@ctx-core/store": "^27.0.55",
-		"svelte": "^3.55.1"
+		"svelte": "^3.49.0"
 	},
 	"devDependencies": {
 		"typescript": "^4.9.5"
