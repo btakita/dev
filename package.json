@@ -1,15 +1,19 @@
 {
-	"name": "root",
-	"private": true,
-	"devDependencies": {
-		"@changesets/cli": "^2.26.0",
-		"@ctx-core/jetbrains": "^7.1.67",
-		"@ctx-core/monorepo": "^18.4.49"
-	},
-	"workspaces": {
-		"packages": [
-			"packages/*",
-			"packages/@ctx-core/*"
-		]
-	}
+  "name": "@btakita/dev",
+  "private": true,
+  "type": "module",
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "devDependencies": {
+    "@btakita/-dev-bin": "workspace:*",
+    "@changesets/cli": "^2.26.0",
+    "@ctx-core/jetbrains": "^7.1.67",
+    "@ctx-core/monorepo": "^18.4.49",
+    "bun-types": "latest"
+  },
+  "workspaces": [
+    "app/*",
+    "lib/*"
+  ]
 }
