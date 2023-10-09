@@ -1,3 +1,6 @@
 [submodule "packages/sapper-template"]
 	path = packages/sapper-template
 	url = git@github.com:ctx-core/sapper-template.git
+[submodule "app/briantakita.com"]
+	path = app/briantakita.com
+	url = git@github.com:btakita/briantakita.com.git
