@@ -4,9 +4,6 @@
 [submodule "app/briantakita.me"]
 	path = app/briantakita.me
 	url = git@github.com:btakita/briantakita.me.git
-[submodule "app/astropaper-blog"]
-	path = app/astropaper-blog
-	url = git@github.com:btakita/astropaper-blog.git
 [submodule "app/briantakita.com"]
 	path = app/briantakita.com
 	url = git@github.com:btakita/briantakita.com.git
