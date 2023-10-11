@@ -1,29 +1,28 @@
 {
-	"exclude": [],
 	"compilerOptions": {
-		"target": "es2018",
-		"lib": [
-			"es2019",
-			"dom"
-		],
-		"baseUrl": ".",
-		"paths": {
-			"*": [
-				"node_modules/*/src"
-			]
-		},
-		"composite": true,
-		"declaration": true,
-		"outDir": ".",
-		"declarationDir": ".",
-		"noEmitOnError": true,
-		"noErrorTruncation": true,
+		"lib": ["ESNext", "DOM"],
 		"module": "esnext",
-		"moduleResolution": "node",
-		"resolveJsonModule": true,
+		"target": "esnext",
+		"moduleResolution": "bundler",
+		"moduleDetection": "force",
+		"allowImportingTsExtensions": true,
+		"noEmit": true,
+		"composite": true,
+		"strict": true,
+		"downlevelIteration": true,
+		"skipLibCheck": true,
+		"jsxImportSource": "solid-js",
+		"jsx": "preserve",
 		"allowSyntheticDefaultImports": true,
-		"noImplicitThis": true,
-		"noUnusedLocals": true,
-		"noUnusedParameters": true
+		"forceConsistentCasingInFileNames": true,
+		"allowJs": true,
+		"types": [
+			"bun-types" // add Bun global
+		],
+
+		"resolveJsonModule": true,
+		"rootDir": "src",
+		"declaration": true
+
 	}
 }
