@@ -2,14 +2,11 @@
   "name": "@btakita/dev",
   "private": true,
   "type": "module",
-  "peerDependencies": {
-    "typescript": "^5.0.0"
-  },
   "devDependencies": {
     "@btakita/-dev-bin": "workspace:*",
-    "@changesets/cli": "^2.26.0",
-    "@ctx-core/jetbrains": "^7.1.67",
-    "@ctx-core/monorepo": "^18.4.49",
+    "@changesets/cli": "^2.26.2",
+    "@ctx-core/jetbrains": "^7.2.85",
+    "@ctx-core/monorepo": "^20.4.117",
     "bun-types": "latest"
   },
   "workspaces": [
