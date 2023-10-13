@@ -6,7 +6,7 @@
     "@btakita/-dev-bin": "workspace:*",
     "@changesets/cli": "^2.26.2",
     "@ctx-core/jetbrains": "^7.2.85",
-    "@ctx-core/monorepo": "^20.4.118",
+    "@ctx-core/monorepo": "^20.4.119",
     "bun-types": "latest"
   },
   "workspaces": [
