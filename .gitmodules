@@ -19,3 +19,6 @@
 [submodule "lib/domain--server--blog"]
 	path = lib/domain--server--blog
 	url = git@github.com:btakita/domain--server--blog.git
+[submodule "lib/ui--all--blog"]
+	path = lib/ui--all--blog
+	url = git@github.com:btakita/ui--all--blog.git
