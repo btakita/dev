@@ -4,8 +4,9 @@
   "type": "module",
   "devDependencies": {
     "@btakita/-dev-bin": "workspace:*",
-    "@changesets/cli": "^2.26.2",
-    "@ctx-core/monorepo": "^20.4.120",
+    "@changesets/cli": "^2.27.1",
+    "@ctx-core/jetbrains": "^7.3.32",
+    "@ctx-core/monorepo": "^20.5.64",
     "bun-types": "latest"
   },
   "workspaces": [
